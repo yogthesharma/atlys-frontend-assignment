@@ -1,8 +1,64 @@
-Pending tasks:
+# Linear Equations Solver
 
-1. Stylng of the side input fields. - Done
-2. Fixing the svg overlay takeover.
-3. Making better logic for the rendering of the components - Done
-4. Fix typescript issues - Done
-5. Fix Logic if needed
-6. Need to have proper logic for taking input and showing output. - Kind of done Will take care later
+This project is a web application built with React that allows users to input, edit, and evaluate linear equations. The application validates user input, processes equations in sequence, and provides visual feedback using SVG paths.
+
+## Features
+
+- Input and edit linear equations
+- Validate linear equations to ensure they are in the correct format
+- Process and evaluate equations sequentially
+- Render interactive SVG paths based on equations
+- Dynamic error handling and visual feedback
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/linear-equations-solver.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd linear-equations-solver
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+   or
+   ```bash
+   yarn install
+   ```
+
+### Usage
+
+1. Start the development server:
+   ```bash
+   npm start
+   ```
+   or
+   ```bash
+   yarn start
+   ```
+2. Open your browser and go to `http://localhost:3000` to view the application.
+
+## Project Structure
+
+- `src/`
+  - `components/`
+    - `Line.js`: Component to render SVG paths.
+    - `EquationInput.js`: Component to input and edit equations.
+  - `App.js`: Main application component.
+  - `index.js`: Entry point of the application.
+- `public/`: Public assets and HTML template.
+- `README.md`: Project documentation.
+
+## Validation
+
+The application includes a function to validate whether a user-entered equation is valid. The validation function supports linear equations and equations with exponents.
