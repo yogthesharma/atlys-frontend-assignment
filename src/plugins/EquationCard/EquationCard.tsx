@@ -1,5 +1,4 @@
 import { Card } from "../../widgets/Card/Card";
-import { EquationCardPropTypes } from "../../App";
 import { TextField } from "../../components/Textfield";
 import { Typography } from "../../components/Typography";
 import { RadioInput } from "../../components/RadioInput";
@@ -12,6 +11,14 @@ export interface EquationCardWidgetProps {
   handleEquationChange: (order: number, newEquation: string) => void;
   order: number;
   isValid: boolean;
+}
+
+export interface EquationCardPropTypes {
+  title: string;
+  order: number;
+  equation: string;
+  input?: boolean;
+  output?: boolean;
 }
 
 export const EquationCard = (props: EquationCardWidgetProps) => {
@@ -35,7 +42,6 @@ export const EquationCard = (props: EquationCardWidgetProps) => {
                   value={value}
                   onChange={(e) => handleEquationChange(order, e.target.value)}
                   inputClassName={isValid ? "" : "error-textfield"}
-
                 />
               </div>
               <div>

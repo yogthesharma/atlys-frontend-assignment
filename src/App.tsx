@@ -5,14 +5,6 @@ import { LineWrapperContainer } from "./components/Line";
 
 import "./App.css";
 
-export interface EquationCardPropTypes {
-  title: string;
-  order: number;
-  equation: string;
-  input?: boolean;
-  output?: boolean;
-}
-
 function App() {
   // We can just change the order from here
   const [order] = React.useState([1, 2, 4, 5, 3]);
@@ -22,11 +14,11 @@ function App() {
       <main className="relative">
         <EquationCardWrapper order={order} />
       </main>
-      <LineWrapperContainer order={order} />
+      <div className="hidden md:block">
+        <LineWrapperContainer order={order} />
+      </div>
     </>
   );
 }
 
 export default App;
-
-
