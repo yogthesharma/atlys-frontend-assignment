@@ -48,17 +48,6 @@ This project is a web application built with React that allows users to input, e
    ```
 2. Open your browser and go to `http://localhost:3000` to view the application.
 
-## Project Structure
-
-- `src/`
-  - `components/`
-    - `Line.js`: Component to render SVG paths.
-    - `EquationInput.js`: Component to input and edit equations.
-  - `App.js`: Main application component.
-  - `index.js`: Entry point of the application.
-- `public/`: Public assets and HTML template.
-- `README.md`: Project documentation.
-
 ## Validation
 
 The application includes a function to validate whether a user-entered equation is valid. The validation function supports linear equations and equations with exponents.
