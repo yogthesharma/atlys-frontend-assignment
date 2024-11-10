@@ -60,7 +60,7 @@ export const EquationCard = (props: EquationCardWidgetProps) => {
             </div>
           }
           footer={
-            <div className="flex items-center justify-between w-100">
+            <div className="items-center justify-between w-100 hidden md:flex">
               <div className="flex items-center justify-between relative w-full">
                 <div className="flex items-center justify-between">
                   <RadioInput id={inputId} />
