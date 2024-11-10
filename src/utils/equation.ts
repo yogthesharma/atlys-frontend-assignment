@@ -44,7 +44,7 @@ export const optimizeEquationForEval = (equation: string) => {
 
 export const isValidLinearEquation = (equation: string) => {
   const equationPattern =
-    /^[+-]?(\d+(\.\d+)?[*/]?\s*[+-]?)*x(\^\d+)?(\s*[+-]\s*\d+(\.\d+)?)*$/;
+    /^[+-]?(\d+(\.\d+)?[*/]?\s*[+-]?)*x(\^\d+)?(\s*[+-]\s*\d+(\.\d+)?)*([*/]?\d+(\.\d+)?)?$/;
   return equationPattern.test(equation);
 };
 
